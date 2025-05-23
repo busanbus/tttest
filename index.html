@@ -497,20 +497,20 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header-content" style="padding: 24px 0;">
-        <div class="header-row" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; gap: 0;">
+      <div class="header-content" style="padding: 24px 0 0 0;">
+        <div class="header-row" style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; width: 100%; gap: 0;">
           <!-- 왼쪽: 로고 -->
-          <div class="logo-section" style="justify-content: flex-start; width: 33%; min-width: 120px;">
-            <img src="logo.png" alt="모빌리티 주간동향 로고" style="margin: 0; max-width: 180px; width: 100%;" />
+          <div class="logo-section" style="justify-content: flex-start; width: 33%; min-width: 120px; padding-left: 24px;">
+            <img src="logo.png" alt="모빌리티 주간동향 로고" style="margin: 0; max-width: 260px; width: 100%; min-width: 160px; height: auto;" />
           </div>
-          <!-- 중앙: 날짜 -->
-          <div style="display: flex; flex-direction: column; align-items: center; width: 34%; min-width: 120px;">
-            <div class="date-badge" style="margin-bottom: 6px;">2025년 5월 26일</div>
+          <!-- 중앙: 날짜 (헤더 하단에 붙도록 margin-top 추가) -->
+          <div style="display: flex; flex-direction: column; align-items: center; width: 34%; min-width: 120px; justify-content: flex-end;">
+            <div class="date-badge" style="margin-top: 56px; margin-bottom: 0;">2025년 5월 26일</div>
           </div>
           <!-- 오른쪽: PDF 다운로드 -->
-          <div class="pdf-download header-pdf" style="width: 33%; min-width: 180px; display: flex; flex-direction: column; align-items: flex-end;">
-            <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 12px 20px; display: flex; align-items: center; gap: 16px; max-width: 320px;">
-              <span class="pdf-icon" style="width: 36px; height: 36px; font-size: 18px; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">PDF</span>
+          <div class="pdf-download header-pdf" style="width: 33%; min-width: 180px; display: flex; flex-direction: column; align-items: flex-end; padding-right: 24px;">
+            <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 12px 20px; display: flex; align-items: center; gap: 16px; max-width: 340px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="pdf" width="34" style="vertical-align:middle;opacity:0.78; margin-right: 2px;" />
               <div class="pdf-content" style="display: flex; flex-direction: column;">
                 <a href="https://drive.google.com/file/d/1Fz6nepkdMhbev2tXvDo-8LJWQMi9o0Wc/view?usp=drive_link" target="_blank" class="pdf-link" style="font-size: 15px; font-weight: 700; color: #0066FF; margin-bottom: 2px;">주간 동향 보고서 원문(PDF) 바로보기</a>
                 <p style="color: #5A6573; font-size: 13px; margin: 0;">상세 내용이 궁금하다면 원문 파일을 받아보세요.</p>
