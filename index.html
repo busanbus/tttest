@@ -497,16 +497,26 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header-content">
-        <div class="logo-section">
-          <img src="logo.png" alt="모빌리티 주간동향 로고" />
-        </div>
-        <div class="header-row">
-          <div class="date-badge">25-05-19</div>
-          <a href="https://drive.google.com/file/d/195zANgJbgPU9_56K7Xur4F2pyMiiZwq2/view" target="_blank" class="pdf-btn">
-            <span class="pdf-icon">📄</span>
-            <span class="pdf-btn-text">동향 보고서(PDF)</span>
-          </a>
+      <div class="header-content" style="padding: 24px 0;">
+        <div class="header-row" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; gap: 0;">
+          <!-- 왼쪽: 로고 -->
+          <div class="logo-section" style="justify-content: flex-start; width: 33%; min-width: 120px;">
+            <img src="logo.png" alt="모빌리티 주간동향 로고" style="margin: 0; max-width: 180px; width: 100%;" />
+          </div>
+          <!-- 중앙: 날짜 -->
+          <div style="display: flex; flex-direction: column; align-items: center; width: 34%; min-width: 120px;">
+            <div class="date-badge" style="margin-bottom: 6px;">2025년 5월 26일</div>
+          </div>
+          <!-- 오른쪽: PDF 다운로드 -->
+          <div class="pdf-download header-pdf" style="width: 33%; min-width: 180px; display: flex; flex-direction: column; align-items: flex-end;">
+            <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 12px 20px; display: flex; align-items: center; gap: 16px; max-width: 320px;">
+              <span class="pdf-icon" style="width: 36px; height: 36px; font-size: 18px; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">PDF</span>
+              <div class="pdf-content" style="display: flex; flex-direction: column;">
+                <a href="https://drive.google.com/file/d/1Fz6nepkdMhbev2tXvDo-8LJWQMi9o0Wc/view?usp=drive_link" target="_blank" class="pdf-link" style="font-size: 15px; font-weight: 700; color: #0066FF; margin-bottom: 2px;">주간 동향 보고서 원문(PDF) 바로보기</a>
+                <p style="color: #5A6573; font-size: 13px; margin: 0;">상세 내용이 궁금하다면 원문 파일을 받아보세요.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -514,64 +524,64 @@
     <div class="news-grid">
       <article class="news-card">
         <div class="news-image">
-          <img src="https://www.korea.kr/newsWeb/resources/attaches/2025.05/15/image01.jpg" alt="교통안전 정책" loading="lazy">
+          <img src="https://cdn.korearailroad.kr/news/photo/202409/403_483_392.png" alt="외국인 맞춤형 철도 서비스" loading="lazy">
         </div>
         <div class="news-content">
-          <span class="news-category">국토교통부</span>
-          <h2 class="news-title">도로교통사고 사망자 감소대책 발표</h2>
+          <span class="news-category">코레일</span>
+          <h2 class="news-title">외국인 전용 교통+통신패스 인기</h2>
           <p class="news-summary">
-            국토교통부가 보행자 보호를 위한 횡단보도 신호시간 단축, 보행자 우선도로 확대, 음주·위험운전 처벌 강화, 이륜차 안전기준 신설 등 종합적인 교통안전 대책을 발표했습니다.
+            코레일과 LG유플러스가 협력한 외국인 전용 패스(나마네카드)가 주목받고 있습니다. 전국 지하철, 버스, 데이터망을 3~5일간 무제한 이용할 수 있어 관광객 편의성이 크게 향상되었습니다.
           </p>
           <div class="news-footer">
-            <a href="https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090938" class="news-link" target="_blank">자세히 보기</a>
+            <a href="https://info.korail.com/info/selectBbsNttView.do;jsessionid=RK19A1TVstcPD0rXvBpW7O0V1bDBKGEFW3c9q7vcEzM17Cbml2TvSRssBNuZdjTQ?key=911&bbsNo=199&nttNo=24758&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1" class="news-link" target="_blank">자세히 보기</a>
           </div>
         </div>
       </article>
 
       <article class="news-card">
         <div class="news-image">
-          <img src="https://img.etnews.com/news/article/2025/05/14/news-p.v1.20250514.abc7a032ce9443799136505b5a097a68_P1.jpg" alt="자율주행 협력통신" loading="lazy">
+          <img src="https://thumb.zumst.com/530x0/https://static.news.zumst.com/images/10/2025/05/22/1a10e5d0c1a0408591084dc6966c0267.jpg" alt="서울 마을버스조합 무료환승 체계 이탈 예고" loading="lazy">
         </div>
         <div class="news-content">
-          <span class="news-category">대전</span>
-          <h2 class="news-title">자율주행 V2X 실증사업 선정</h2>
+          <span class="news-category">서울</span>
+          <h2 class="news-title">마을버스조합, 대중교통 무료환승 체계 이탈 예고</h2>
           <p class="news-summary">
-            대전시가 과기부 주관 '이기종 V2X 협력주행 통신기술' 실증사업에 선정, 자율주행차량 통합관제·원격제어 등 첨단 모빌리티 실증이 본격 추진됩니다.
+            서울 마을버스조합이 대중교통 무료환승 체계 이탈을 결의했습니다. 요금 인상과 환승손실금 반영 요구가 받아들여지지 않을 경우, 운행 중단도 불사하겠다는 입장입니다.
           </p>
           <div class="news-footer">
-            <a href="https://www.daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&pageIndex=1&ntatcSeq=1482667640" class="news-link" target="_blank">자세히 보기</a>
+            <a href="https://www.hani.co.kr/arti/area/capital/1198716.html#cb" class="news-link" target="_blank">자세히 보기</a>
           </div>
         </div>
       </article>
 
       <article class="news-card">
         <div class="news-image">
-          <img src="https://cdn.ksilbo.co.kr/news/photo/202505/1026804_610102_5157.jpg" alt="수소센터" loading="lazy">
+          <img src="https://img1.newsis.com/2025/05/19/NISI20250519_0020815137_web.jpg" alt="홍보캐릭터 대전" loading="lazy">
         </div>
         <div class="news-content">
-          <span class="news-category">울산</span>
-          <h2 class="news-title">전국 최대 수소출하센터 준공</h2>
+          <span class="news-category">광주</span>
+          <h2 class="news-title">홍보캐릭터 대전</h2>
           <p class="news-summary">
-            울산에 하루 43톤 생산이 가능한 전국 최대 수소출하센터가 준공됐습니다. 국내 첫 국산 압축기를 적용, 대중교통 수소 인프라가 한층 확대될 전망입니다.
+            '광주방문의 해'를 맞아 시청 야외에서 '빛돌이' 캐릭터 결혼식 이벤트가 24일 열렸습니다. 전국 지자체 캐릭터들이 하객으로 참여하며 지역 홍보와 콘텐츠산업 활성화를 동시에 꾀했습니다.
           </p>
           <div class="news-footer">
-            <a href="https://www.ulsan.go.kr/u/rep/bbs/view.do?bbsId=BBS_0000000000000027&mId=001004003001000000&dataId=171911" class="news-link" target="_blank">자세히 보기</a>
+            <a href="https://sports.donga.com/news/article/all/20250519/131633507/1" class="news-link" target="_blank">자세히 보기</a>
           </div>
         </div>
       </article>
 
       <article class="news-card">
         <div class="news-image">
-          <img src="https://www.headlinejeju.co.kr/news/photo/202502/563869_455292_310.jpg" alt="제주 버스공영제" loading="lazy">
+          <img src="https://cdn.voiceofbusan.com/news/photo/202505/1180_1072_5815.jpg" alt="광안대교 출근시간 확대" loading="lazy">
         </div>
         <div class="news-content">
-          <span class="news-category">제주</span>
-          <h2 class="news-title">버스완전공영제 도입 불발</h2>
+          <span class="news-category">부산</span>
+          <h2 class="news-title">광안대교 출근시간 할인 확대</h2>
           <p class="news-summary">
-            제주도의 버스완전공영제 도입이 정책개발청구심의회 부결로 무산됐습니다. 이해관계, 지속가능성, 현실성 등 다양한 논의가 필요하다는 지적이 제기되었습니다.
+            오는 5월 26일부터 출퇴근(6~9시, 18~20시)경차 제외 전 차량 요금 할인 시간을 1시간 확대 시행한다고 밝혔습니다.
           </p>
           <div class="news-footer">
-            <a href="https://www.jejudomin.co.kr/news/articleView.html?idxno=310931" class="news-link" target="_blank">자세히 보기</a>
+            <a href="https://www.busan.go.kr/nbtnewsBU/1680624?curPage=1&srchBeginDt=2025-05-13&srchEndDt=2025-05-20&srchKey=&srchText=" class="news-link" target="_blank">자세히 보기</a>
           </div>
         </div>
       </article>
