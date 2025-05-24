@@ -480,7 +480,7 @@
         padding-right: 0 !important;
         width: 100% !important;
         display: flex !important;
-        margin: 0 auto !important;
+        margin: 24px auto 0 auto !important;
       }
       .pdf-download.header-pdf > a {
         width: 100% !important;
@@ -620,26 +620,29 @@
           <div class="logo-section" style="justify-content: flex-start; width: 33%; min-width: 120px; padding-left: 24px;">
             <img src="logo.png" alt="모빌리티 주간동향 로고" style="margin: 0; max-width: 260px; width: 100%; min-width: 160px; height: auto;" />
           </div>
-          <!-- 오른쪽: 날짜(글자) + PDF 다운로드 -->
+          <!-- 오른쪽: 날짜(글자) -->
           <div class="header-right-col" style="width: 33%; min-width: 180px; display: flex; flex-direction: column; align-items: flex-end; padding-right: 24px; gap: 8px;">
             <div class="date-text-info">
               <span class="date-week-text">2025년 5월 셋째주</span>
-            </div>
-            <div class="pdf-download header-pdf">
-              <a href="https://drive.google.com/file/d/1Fz6nepkdMhbev2tXvDo-8LJWQMi9o0Wc/view?usp=drive_link" target="_blank" style="text-decoration: none; width: 100%; display: flex; justify-content: flex-end;">
-                <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 12px 20px; display: flex; align-items: center; gap: 16px; max-width: 340px; width: 100%; cursor: pointer;">
-                  <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="pdf" width="34" style="vertical-align:middle;opacity:0.78; margin-right: 2px;" />
-                  <div class="pdf-content" style="display: flex; flex-direction: column;">
-                    <span class="pdf-link" style="font-size: 15px; font-weight: 700; color: #0066FF; margin-bottom: 2px;">주간 동향 보고서 원문(PDF)보기</span>
-                  </div>
-                </div>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <div class="pdf-download header-pdf" style="margin-top: 32px; margin-bottom: 24px; display: flex; justify-content: center;">
+      <a href="https://drive.google.com/file/d/1Fz6nepkdMhbev2tXvDo-8LJWQMi9o0Wc/view?usp=drive_link" target="_blank" style="text-decoration: none;">
+        <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 16px 24px; display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 340px; cursor: pointer;">
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="pdf" width="34" style="vertical-align:middle;opacity:0.78; margin-right: 2px;" />
+            <div class="pdf-content" style="display: flex; flex-direction: column;">
+              <span class="pdf-link" style="font-size: 15px; font-weight: 700; color: #0066FF; margin-bottom: 2px;">주간 동향 보고서 원문(PDF)보기</span>
+            </div>
+          </div>
+          <span style="font-size: 13px; color: #5A6573; margin-top: 6px;">클릭하시면 최신 주간 동향 PDF 파일을 새 창에서 확인하실 수 있습니다.</span>
+        </div>
+      </a>
+    </div>
     <div class="news-grid">
       <article class="news-card">
         <div class="news-image">
