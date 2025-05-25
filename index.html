@@ -52,10 +52,10 @@
     .header {
       background: #fff;
       border-bottom: 1px solid var(--border-light);
-      position: static;
-      backdrop-filter: none;
-      border-bottom-left-radius: 32px;
-      border-bottom-right-radius: 32px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      padding: 56px 0 48px 0;
     }
 
     .header-content {
@@ -68,11 +68,9 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 16px;
-      margin-top: 18px;
-      margin-bottom: 8px;
-      width: 100%;
+      justify-content: space-between;
+      gap: 48px;
+      min-height: 120px;
     }
 
     .logo-section {
@@ -81,6 +79,10 @@
       justify-content: center;
       width: 100%;
       gap: 16px;
+      justify-content: center !important;
+      align-items: center !important;
+      height: 100%;
+      padding-left: 0 !important;
     }
 
     .logo-section img {
@@ -89,13 +91,13 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 36px auto 0 auto;
+      margin: 0 !important;
     }
 
     @media (min-width: 768px) {
       .logo-section img {
         max-width: 480px;
-        width: 98%;
+        width: 100%;
       }
     }
 
@@ -447,11 +449,15 @@
         padding: 0 16px;
       }
 
+      .header {
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        padding: 24px 0 18px 0;
+      }
       .header-row {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-        gap: 18px !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
       }
       .logo-section {
         width: 100% !important;
@@ -539,12 +545,6 @@
       .date-day-text {
         font-size: 12px;
       }
-
-      .header {
-        background: #fff;
-        border-bottom-left-radius: 18px;
-        border-bottom-right-radius: 18px;
-      }
     }
 
     @media (max-width: 480px) {
@@ -617,6 +617,47 @@
         font-size: 12px;
       }
     }
+
+    .pdf-download.header-pdf > a > div {
+      max-width: 380px;
+      width: 100%;
+      min-width: 0;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid #E8EAED;
+      background: #fff;
+    }
+
+    /* PDF 박스가 카드뉴스(news-card)와 동일한 너비가 되도록 강제 */
+    .pdf-download.header-pdf {
+      width: 100%;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pdf-download.header-pdf .pdf-box {
+      width: 100%;
+      max-width: 380px;
+      min-width: 0;
+      border-radius: 16px;
+      box-sizing: border-box;
+    }
+
+    /* 모바일에서 news-card와 pdf-box width 동일하게 */
+    @media (max-width: 768px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .pdf-download.header-pdf {
+        max-width: 100%;
+        width: 100%;
+      }
+      .pdf-download.header-pdf .pdf-box {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -640,7 +681,7 @@
 
     <div class="pdf-download header-pdf" style="margin-top: 32px; margin-bottom: 24px; display: flex; justify-content: center;">
       <a href="https://drive.google.com/file/d/1Fz6nepkdMhbev2tXvDo-8LJWQMi9o0Wc/view?usp=drive_link" target="_blank" style="text-decoration: none;">
-        <div style="background: #fff; border: 1px solid #E8EAED; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 16px 24px; display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 340px; cursor: pointer;">
+        <div class="pdf-box" style="background: #fff; border: 1px solid #E8EAED; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; min-width: 0; max-width: 380px; cursor: pointer;">
           <div style="display: flex; align-items: center; gap: 16px;">
             <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="pdf" width="34" style="vertical-align:middle;opacity:0.78; margin-right: 2px;" />
             <div class="pdf-content" style="display: flex; flex-direction: column;">
