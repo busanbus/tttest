@@ -264,10 +264,12 @@
       font-weight: 600;
       border-bottom: 2px solid transparent;
       transition: var(--transition);
+      text-underline-offset: 4px;
     }
 
     .pdf-link:hover {
-      border-bottom-color: var(--primary-blue);
+      border-bottom-color: transparent;
+      text-decoration: underline;
     }
 
     /* Enhanced Card Grid */
@@ -490,11 +492,8 @@
         margin-top: 0;
       }
       .logo-section img {
-        max-width: 220px;
-        width: 80vw;
-        min-width: 0;
-        margin: 0 auto;
-        display: block;
+        max-width: 260px;
+        width: 85vw;
       }
       .header-row > div {
         width: 100% !important;
